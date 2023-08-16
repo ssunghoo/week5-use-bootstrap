@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--googleFont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 bg-dark bg-opacity-10 g-0 d-flex flex-column align-items-start">
+          <div class="logo"><img src="../assets/images/logo-ANSWER.svg" alt=""></div>
+          <ul class="nav-list list-unstyled">
+            <li>
+              <a href="#"><span class="material-icons">insert_chart</span>Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons">forum</span>Question</a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons">assignment</span>Assignment</a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons">video_library</span>Course</a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons">people</span>Admin</a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons">settings</span>Settings</a>
+            </li>
+          </ul>
+          <div class="mt-auto d-flex side-down">
+            <img src="../assets/images/andychen.jpeg" alt="">
+            <div>
+              <h3>Andy Chen</h3>
+              <p>andy0401@mail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+
+          <div class="side-r d-flex align-items-center">
+            <h1 class="">Admin</h1>
+            <div class="d-flex flex-fill justify-content-between align-items-center">
+              <p>
+                <a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="material-icons">add</span>
+                Add New Admin
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="mb-3">
+                            <h4>Account</h4>
+                            <label for="formGroupExampleInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Emir Wicks">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="emir.wicks@mail.com">
+                          </div>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Cancel</button>
+                            <input class="btn btn-success btn-sm" type="submit" value="Add">
+                          </div>
+                          
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+              <div class="d-flex align-items-center">
+                <a class="d-flex align-items-center" href="#"><span class="material-icons me-3">search</span></a>
+                <a class="d-flex align-items-center" href="#"><span class="material-icons">notifications_active</span></a>
+              </div>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="d-flex align-items-center">
+                  ID<span class="material-icons main-color">
+                  arrow_downward</span>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td class="d-flex align-items-center justify-content-between">
+                  <div>Yes</div>
+                  <div>
+                    <a href="#">
+                      <span class="material-icons me-3">
+                        visibility
+                      </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-icons me-2">
+                        edit
+                      </span>
+                    </a>                   
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-end">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link"><span class="material-icons">
+                    chevron_left
+                    </span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#"><span class="material-icons">
+                    chevron_right
+                    </span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
